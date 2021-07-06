@@ -1,6 +1,5 @@
 import telebot, requests, os, json
 from flask import Flask, request
-from "resources/codes" import codes
 import aiohttp
 import asyncio
 
