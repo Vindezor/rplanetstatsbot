@@ -11,7 +11,7 @@ DEC = int(os.getenv('DEC'))
 bot = telebot.TeleBot(KEY)
 server = Flask(__name__)
 
-with open("..\\resources\\codes.json", "r") as f:
+with open(os.getenv('CODES_PATH'), "r") as f:
     codes = json.load(f)
     f.close()
 
