@@ -1,5 +1,6 @@
-import telebot, requests, os, json
+import telebot, requests, os
 from flask import Flask, request
+from resources.codes import codes
 import aiohttp
 import asyncio
 
@@ -10,10 +11,6 @@ DEC = int(os.getenv('DEC'))
 
 bot = telebot.TeleBot(KEY)
 server = Flask(__name__)
-
-with open(os.getenv('CODES_PATH'), "r") as f:
-    codes = json.load(f)
-    f.close()
 
 def getTableRows(session, code, table, scope, lower, upper):
     send = {

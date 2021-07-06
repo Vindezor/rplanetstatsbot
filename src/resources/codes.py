@@ -1,4 +1,4 @@
-{
+codes = {
     "alien.worlds": "Alien Worlds",
     "bitcoinelite": "The Bitcoin Elite",
     "bitverse": "Bitverse Comics",
