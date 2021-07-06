@@ -27,7 +27,7 @@ async def miningPower(account):
         "scope": "s.rplanet",
         "lower_bound": "",
         "upper_bound": "",
-        "limit": 1000
+        "limit": 100
         }   
         poolinfo = requests.post(URL_API + "/get_table_rows", json=send).json()
         mining = {}
